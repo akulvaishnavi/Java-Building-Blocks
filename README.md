@@ -16,9 +16,19 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/java-building-blocks.git
+   git clone https://github.com/akulvaishnavi/Java-Building-Blocks.git
    ```
 2. Navigate to the project directory:
    ```sh
-   git clone https://github.com/your-username/java-building-blocks.git
+   git clone https://github.com/akulvaishnavi/Java-Building-Blocks.git
+   ```
+
+## Running the programs
+
+1. Open the project in your IDE.
+2. Navigate to the program you want to run.
+3. Compile and run the Java file using your IDE's run configuration or terminal commands:
+   ```sh
+   javac HelloWorld.java
+   java HelloWorld
    ```
