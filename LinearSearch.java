@@ -1,14 +1,17 @@
 import java.util.Scanner;
 
-public class LinearSearch {
-    public static void main(String[] args) {
+public class LinearSearch 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of elements in the array: ");
         int n = sc.nextInt();
         int[] array = new int[n];
 
         System.out.println("Enter the elements of the array: ");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++)
+        {
             array[i] = sc.nextInt();
         }
 
@@ -29,9 +32,12 @@ public class LinearSearch {
         sc.close();
     }
   
-    public static int linearSearch(int[] array, int key) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == key) {
+    public static int linearSearch(int[] array, int key) 
+    {
+        for (int i = 0; i < array.length; i++) 
+        {
+            if (array[i] == key) 
+            {
                 return i; 
             }
         }
