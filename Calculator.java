@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Calculator {
-    public static void main(String[] args) {
+public class Calculator 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the first number: ");
@@ -15,7 +17,8 @@ public class Calculator {
         
         double result = 0;
         
-        switch(operator) {
+        switch(operator)
+            {
             case '+':
                 result = add(num1, num2);
                 break;
@@ -38,20 +41,25 @@ public class Calculator {
         sc.close();
     }
 
-    public static double add(double num1, double num2) {
+    public static double add(double num1, double num2) 
+    {
         return num1 + num2;
     }
 
-    public static double subtract(double num1, double num2) {
+    public static double subtract(double num1, double num2) 
+    {
         return num1 - num2;
     }
     
-    public static double multiply(double num1, double num2) {
+    public static double multiply(double num1, double num2) 
+    {
         return num1 * num2;
     }
   
-    public static double divide(double num1, double num2) {
-        if(num2 == 0) {
+    public static double divide(double num1, double num2) 
+    {
+        if(num2 == 0) 
+        {
             System.out.println("Error! Division by zero is not allowed.");
             return 0;
         }
