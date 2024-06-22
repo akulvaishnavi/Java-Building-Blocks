@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TemperatureConverter {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("Temperature Converter Menu:");
             System.out.println("1. Convert Celsius to Fahrenheit");
@@ -11,24 +11,24 @@ public class TemperatureConverter {
             System.out.println("3. Exit");
             System.out.print("Enter your choice (1/2/3): ");
 
-            int choice = scanner.nextInt();
+            int choice = sc.nextInt();
             double temperature;
             switch (choice) {
                 case 1:
                     System.out.print("Enter temperature in Celsius: ");
-                    temperature = scanner.nextDouble();
+                    temperature = sc.nextDouble();
                     double fahrenheit = celsiusToFahrenheit(temperature);
                     System.out.println("Temperature in Fahrenheit: " + fahrenheit);
                     break;
                 case 2:
                     System.out.print("Enter temperature in Fahrenheit: ");
-                    temperature = scanner.nextDouble();
+                    temperature = sc.nextDouble();
                     double celsius = fahrenheitToCelsius(temperature);
                     System.out.println("Temperature in Celsius: " + celsius);
                     break;
                 case 3:
                     System.out.println("Exiting...");
-                    scanner.close();
+                    sc.close();
                     return;
                 default:
                     System.out.println("Invalid choice. Please enter 1, 2, or 3.");
