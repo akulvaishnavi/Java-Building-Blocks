@@ -1,10 +1,11 @@
 import java.util.Scanner;
-
-public class TemperatureConverter {
-
-    public static void main(String[] args) {
+public class TemperatureConverter 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc = new Scanner(System.in);
-        while (true) {
+        while (true) 
+        {
             System.out.println("Temperature Converter Menu:");
             System.out.println("1. Convert Celsius to Fahrenheit");
             System.out.println("2. Convert Fahrenheit to Celsius");
@@ -13,7 +14,8 @@ public class TemperatureConverter {
 
             int choice = sc.nextInt();
             double temperature;
-            switch (choice) {
+            switch (choice) 
+            {
                 case 1:
                     System.out.print("Enter temperature in Celsius: ");
                     temperature = sc.nextDouble();
@@ -37,11 +39,13 @@ public class TemperatureConverter {
         }
     }
 
-    public static double celsiusToFahrenheit(double celsius) {
+    public static double celsiusToFahrenheit(double celsius) 
+    {
         return (celsius * 9/5) + 32;
     }
 
-    public static double fahrenheitToCelsius(double fahrenheit) {
+    public static double fahrenheitToCelsius(double fahrenheit) 
+    {
         return (fahrenheit - 32) * 5/9;
     }
 }
