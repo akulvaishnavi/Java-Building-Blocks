@@ -13,20 +13,20 @@ public class TemperatureConverter
             System.out.print("Enter your choice (1/2/3): ");
 
             int choice = sc.nextInt();
-            double temperature;
+            double temp;
             switch (choice) 
             {
                 case 1:
                     System.out.print("Enter temperature in Celsius: ");
-                    temperature = sc.nextDouble();
-                    double fahrenheit = celsiusToFahrenheit(temperature);
-                    System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+                    temp = sc.nextDouble();
+                    double fah = celsiusToFahrenheit(temp);
+                    System.out.println("Temperature in Fahrenheit: " + fah);
                     break;
                 case 2:
                     System.out.print("Enter temperature in Fahrenheit: ");
-                    temperature = sc.nextDouble();
-                    double celsius = fahrenheitToCelsius(temperature);
-                    System.out.println("Temperature in Celsius: " + celsius);
+                    temp = sc.nextDouble();
+                    double cel = fahrenheitToCelsius(temp);
+                    System.out.println("Temperature in Celsius: " + cel);
                     break;
                 case 3:
                     System.out.println("Exiting...");
