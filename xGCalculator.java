@@ -4,15 +4,15 @@ public class xGCalculator
 {
     public static void main(String[] args) 
   {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
         System.out.println("Expected Goals (xG) Calculator");
 
         System.out.print("Enter distance from goal (in meters): ");
-        double distance = scanner.nextDouble();
+        double distance = sc.nextDouble();
 
         System.out.print("Enter angle to goal (in degrees): ");
-        double angle = scanner.nextDouble();
+        double angle = sc.nextDouble();
 
         System.out.println("Enter type of shot: ");
         System.out.println("1. Header");
@@ -22,7 +22,7 @@ public class xGCalculator
         double xG = calculatexG(distance, angle, shotType);
         System.out.println("Expected Goals (xG) value: " + xG);
 
-        scanner.close();
+        sc.close();
     }
 
     public static double calculatexG(double distance, double angle, int shotType) {
