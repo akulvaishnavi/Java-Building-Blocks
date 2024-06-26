@@ -31,7 +31,7 @@ public class WeightConverter
                     break;
                 case 3:
                     System.out.println("Exiting...");
-                    scanner.close();
+                    sc.close();
                     return;
                 default:
                     System.out.println("Invalid choice. Please enter 1, 2, or 3.");
