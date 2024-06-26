@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
-public class WeightConverter {
-
-    public static void main(String[] args) {
+public class WeightConverter 
+{
+    public static void main(String[] args) 
+    {
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+        while (true) 
+        {
             System.out.println("Weight Converter Menu:");
             System.out.println("1. Convert Pounds to Kilograms");
             System.out.println("2. Convert Kilograms to Pounds");
@@ -13,7 +15,8 @@ public class WeightConverter {
 
             int choice = scanner.nextInt();
             double weight;
-            switch (choice) {
+            switch (choice) 
+            {
                 case 1:
                     System.out.print("Enter weight in pounds: ");
                     weight = scanner.nextDouble();
@@ -37,12 +40,14 @@ public class WeightConverter {
         }
     }
 
-    public static double poundsToKilograms(double pounds) {
+    public static double poundsToKilograms(double pounds) 
+    {
         final double KG_PER_POUND = 0.45359237;
         return pounds * KG_PER_POUND;
     }
 
-    public static double kilogramsToPounds(double kilograms) {
+    public static double kilogramsToPounds(double kilograms) 
+    {
         final double POUNDS_PER_KG = 2.2046226218;
         return kilograms * POUNDS_PER_KG;
     }
