@@ -4,7 +4,7 @@ public class WeightConverter
 {
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         while (true) 
         {
             System.out.println("Weight Converter Menu:");
@@ -13,19 +13,19 @@ public class WeightConverter
             System.out.println("3. Exit");
             System.out.print("Enter your choice (1/2/3): ");
 
-            int choice = scanner.nextInt();
+            int choice = sc.nextInt();
             double weight;
             switch (choice) 
             {
                 case 1:
                     System.out.print("Enter weight in pounds: ");
-                    weight = scanner.nextDouble();
+                    weight = sc.nextDouble();
                     double kilograms = poundsToKilograms(weight);
                     System.out.println("Weight in kilograms: " + kilograms);
                     break;
                 case 2:
                     System.out.print("Enter weight in kilograms: ");
-                    weight = scanner.nextDouble();
+                    weight = sc.nextDouble();
                     double pounds = kilogramsToPounds(weight);
                     System.out.println("Weight in pounds: " + pounds);
                     break;
