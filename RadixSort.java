@@ -13,7 +13,6 @@ public class RadixSort
     public static void radixSort(int[] array) 
     {
         int max = getMax(array);
-
         for (int exp = 1; max / exp > 0; exp *= 10) 
         {
             countSort(array, exp);
@@ -25,7 +24,6 @@ public class RadixSort
         int n = array.length;
         int[] output = new int[n];
         int[] count = new int[10];
-
         // Store count of occurrences in count[]
         for (int i = 0; i < n; i++) 
         {
