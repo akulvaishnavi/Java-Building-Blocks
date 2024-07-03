@@ -38,7 +38,8 @@ if (row_min < arr[k][col])
 {
 col_max = 0;
 break;
-} else
+} 
+else
 col_max = row_min;
 }
 if (col_max != 0)
