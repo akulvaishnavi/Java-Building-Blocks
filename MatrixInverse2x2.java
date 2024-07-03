@@ -3,14 +3,14 @@ public class MatrixInverse2x2
 {
     public static void main(String[] args) 
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the elements of the 2x2 matrix:");
         double[][] matrix = new double[2][2];
         for (int i = 0; i < 2; i++) 
         {
             for (int j = 0; j < 2; j++) 
             {
-                matrix[i][j] = scanner.nextDouble();
+                matrix[i][j] = sc.nextDouble();
             }
         }
         
@@ -38,6 +38,6 @@ public class MatrixInverse2x2
                 System.out.println();
             }
         }
-        scanner.close();
+        sc.close();
     }
 }
