@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class AndOrXor
 {
-    public void and (int a,int b)
+    public void and (int a, int b)
     {
         int d = a & b;
         System.out.println(d);
@@ -39,5 +39,6 @@ public class AndOrXor
                 default:
                 System.out.println("Invalid");
             }
+            sc.close();
         }
 }
