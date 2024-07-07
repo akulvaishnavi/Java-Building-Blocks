@@ -31,23 +31,23 @@ return hrs * rate;
 }
 void display() // Function to display values to user
 {
-super.display();//display function of super class is executed
+super.display(); // display function of super class is executed
 System.out.println("hours worked " + hrs + "rate is " + rate);
 wage = overtime() + basic;
 System.out.println("The wages are " + wage);
 }
-public static void main(String args[])// Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter name");//Asking user for name, basic salary,
-String nam = sc.next();//hrs, rate and user enters values in variables
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter name"); // Asking user for name, basic salary,
+String nam = sc.next(); // hrs, rate and user enters values in variables
 System.out.println("Enter basic salary");
 double bas = sc.nextDouble();
 System.out.println("Enter hours");
 int hr = sc.nextInt();
 System.out.println("Enter rate");
 int rat = sc.nextInt();
-Wages w = new Wages (nam,bas,hr,rat);//Declaring object to use Wages class
+Wages w = new Wages (nam,bas,hr,rat); // Declaring object to use Wages class
 w.display();
 }
 }
