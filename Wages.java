@@ -19,19 +19,17 @@ public class Wages extends Worker // class Wages declared which inherits propert
 int hrs;
 double wage;
 double rate;
-Wages(String n, double b, int h, double r)//Constructor to give values
-//to instance variables
+Wages(String n, double b, int h, double r) // Constructor to give values to instance variables
 {
-super (n,b);//values are sent to constructor of super class for 
-//initialization of variables
+super (n,b); //values are sent to constructor of super class for initialization of variables
 hrs = h;
 rate = r;
 }
-double overtime()//function to find overtime of worker
+double overtime() // function to find overtime of worker
 {
 return hrs * rate;
 }
-void display()//Function to display values to user
+void display() // Function to display values to user
 {
 super.display();//display function of super class is executed
 System.out.println("hours worked " + hrs + "rate is " + rate);
