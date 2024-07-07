@@ -1,22 +1,20 @@
 /* Program to find the wages of a worker using inheritance*/
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 class Worker
 {
 String name;
 double basic;
-Worker(String n, double b)//Constructor to give value to instance 
-//variables
+Worker(String n, double b) // Constructor to give value to instance variables
 {
 name = n;
 basic = b;
 }
-void display()//Function to display the name and basic salary
+void display() // Function to display the name and basic salary
 {
 System.out.println("The name is " + name + " & the basic is " + basic);
 }
 }
-public class Wages extends Worker//class Wages declared which inherits
-//properties from Worker class
+public class Wages extends Worker // class Wages declared which inherits properties from Worker class
 {
 int hrs;
 double wage;
