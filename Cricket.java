@@ -2,13 +2,12 @@
  * Strike Rate = (runs/balls faced) * 100
  * Economy Rate = runs/overs bowled */
 
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 public class Cricket
 {
-public void strikerate(double r, double b)//function strikerate declared
+public void strikerate(double r, double b) // function strikerate declared
     {
-        double sr = (r/b)* 100;//strike rate is found by dividing runs by 
-        //bowls and multipling it by 100
+        double sr = (r/b)* 100; // strike rate is found by dividing runs by bowls and multipling it by 100
 System.out.println("The Strike Rate of the batsman is " + sr);//strikerate 
                                                            //is shown here
     }
