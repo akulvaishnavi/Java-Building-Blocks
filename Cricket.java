@@ -12,9 +12,8 @@ System.out.println("The Strike Rate of the batsman is " + sr); // strikerate is 
     }
 public void economyrate(double o, double ru)
     {
-        double eco = ru/o;//economy rate is found by dividing runs by overs
-System.out.println("The economy rate of the bowler is " + eco);//economy 
-                                                      //rate is shown here
+        double eco = ru/o; // economy rate is found by dividing runs by overs
+System.out.println("The economy rate of the bowler is " + eco); // economy rate is shown here
     }
     public static void main(String args[])// Main method declared
     {
