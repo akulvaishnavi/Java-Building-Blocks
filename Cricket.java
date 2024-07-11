@@ -15,17 +15,14 @@ public void economyrate(double o, double ru)
         double eco = ru/o; // economy rate is found by dividing runs by overs
 System.out.println("The economy rate of the bowler is " + eco); // economy rate is shown here
     }
-    public static void main(String args[])// Main method declared
+    public static void main(String args[]) // Main method declared
     {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class 
-System.out.println("Enter runs scored by batsman");//Asking user for runs 
-                                                                 //scored
-double r = sc.nextDouble();//Accepting value from user
-System.out.println("Enter balls faced by batsman");//Asking user for balls 
-                                                                   //faced
-double b = sc.nextDouble();//Accepting value from user
-System.out.println("Enter overs bowled by bowler");//Asking user for overs 
-                                                                  //bowled
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class 
+System.out.println("Enter runs scored by batsman"); // Asking user for runs scored
+double r = sc.nextDouble(); // Accepting value from user
+System.out.println("Enter balls faced by batsman"); // Asking user for balls faced
+double b = sc.nextDouble(); // Accepting value from user
+System.out.println("Enter overs bowled by bowler"); // Asking user for overs bowled
 double o = sc.nextDouble();//Accepting value from user
 System.out.println("Enter runs conceded by bowler");//Asking user for runs 
                                                                 //conceded
