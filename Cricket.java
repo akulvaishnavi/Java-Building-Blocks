@@ -8,8 +8,7 @@ public class Cricket
 public void strikerate(double r, double b) // function strikerate declared
     {
         double sr = (r/b)* 100; // strike rate is found by dividing runs by bowls and multipling it by 100
-System.out.println("The Strike Rate of the batsman is " + sr);//strikerate 
-                                                           //is shown here
+System.out.println("The Strike Rate of the batsman is " + sr); // strikerate is shown here
     }
 public void economyrate(double o, double ru)
     {
