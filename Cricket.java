@@ -23,13 +23,12 @@ double r = sc.nextDouble(); // Accepting value from user
 System.out.println("Enter balls faced by batsman"); // Asking user for balls faced
 double b = sc.nextDouble(); // Accepting value from user
 System.out.println("Enter overs bowled by bowler"); // Asking user for overs bowled
-double o = sc.nextDouble();//Accepting value from user
-System.out.println("Enter runs conceded by bowler");//Asking user for runs 
-                                                                //conceded
-double ru = sc.nextDouble();//Accepting value from user
-Cricket cr = new Cricket();// Declaring object to use Cricket class
-cr.strikerate(r,b);//value of r and b is passed to function strikerate
-cr.economyrate(o,ru);//value of o and ru is passed to function economyrate 
+double o = sc.nextDouble(); // Accepting value from user
+System.out.println("Enter runs conceded by bowler"); // Asking user for runs conceded
+double ru = sc.nextDouble(); // Accepting value from user
+Cricket cr = new Cricket(); // Declaring object to use Cricket class
+cr.strikerate(r,b); // value of r and b is passed to function strikerate
+cr.economyrate(o,ru); // value of o and ru is passed to function economyrate 
 }
 }
 /* Variable Description table
