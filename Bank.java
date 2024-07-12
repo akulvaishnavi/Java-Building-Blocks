@@ -24,9 +24,9 @@ if(balanceAmount < amount) // if amount is more than than the balance
 System.out.println("Sorry, you can only withdraw " + ba2); // message will come tellng only a specific value can be taken
 }
 }
-public void display()//function display declared
+public void display() // function display declared
 {
-System.out.println("The name of the depositor is " + depositorName);//all
+System.out.println("The name of the depositor is " + depositorName);//all details are shown to user here
 System.out.println("The type of amount is " + typeOfAccount);//details are
 System.out.println("Account number is " + accountNumber);//shown to user
 System.out.println("The balance is " + balanceAmount);//here
