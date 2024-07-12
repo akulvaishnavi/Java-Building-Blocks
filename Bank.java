@@ -11,18 +11,17 @@ Bank(String dn, String toa, int an, int ba) // Constructor declared
      accountNumber = an;
      balanceAmount = ba;
 }
-public void deposit(int amount) // function deposit declared
+public void deposit(int amount) // Function deposit declared
 {
-balanceAmount = balanceAmount + amount; // here amount is added to balance
+balanceAmount = balanceAmount + amount; // Here amount is added to balance
 }
-public void withdraw(int amount)//function withdraw declared
+public void withdraw(int amount) // Function withdraw declared
 {
 int ba2 = balanceAmount;
-balanceAmount = balanceAmount - amount;//here amount is taken from balance
-if(balanceAmount < amount)//if amount is more rhan than the balance
+balanceAmount = balanceAmount - amount; // here amount is taken from balance
+if(balanceAmount < amount) // if amount is more than than the balance
 {
-System.out.println("Sorry, you can only withdraw " + ba2);
-//message will come tellng only a specific value can be taken
+System.out.println("Sorry, you can only withdraw " + ba2); // message will come tellng only a specific value can be taken
 }
 }
 public void display()//function display declared
