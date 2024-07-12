@@ -26,51 +26,44 @@ System.out.println("Sorry, you can only withdraw " + ba2); // message will come 
 }
 public void display() // function display declared
 {
-System.out.println("The name of the depositor is " + depositorName);//all details are shown to user here
-System.out.println("The type of amount is " + typeOfAccount);//details are
-System.out.println("Account number is " + accountNumber);//shown to user
-System.out.println("The balance is " + balanceAmount);//here
+System.out.println("The name of the depositor is " + depositorName); // all details are shown to user here
+System.out.println("The type of amount is " + typeOfAccount);
+System.out.println("Account number is " + accountNumber);
+System.out.println("The balance is " + balanceAmount);
 }
-public static void main(String args[])// Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter Name");//Asking user for name
-String dn = sc.next();//Accepting value from User
-System.out.println("Enter Type of Account");//Asking user for account type
-String toa = sc.next();//Accepting value from User
-System.out.println("Enter Account Number");//Asking user for account number
-int an = sc.nextInt();//Accepting value from User
-System.out.println("Enter Balance");//Asking user for balance
-int ba = sc.nextInt();//Accepting value from User
-System.out.println("Write 1 to deposit money to account, 2 to withdraw");
-//Asking user if he wants to deposit or withdraw money
-int c = sc.nextInt();//Accepting value from User
-switch(c)//switch case declared with variable c as expression
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter Name"); // Asking user for name
+String dn = sc.next(); // Accepting value from User
+System.out.println("Enter Type of Account"); // Asking user for account type
+String toa = sc.next(); // Accepting value from User
+System.out.println("Enter Account Number"); // Asking user for account number
+int an = sc.nextInt(); // Accepting value from User
+System.out.println("Enter Balance"); // Asking user for balance
+int ba = sc.nextInt(); // Accepting value from User
+System.out.println("Write 1 to deposit money to account, 2 to withdraw"); // Asking user if he wants to deposit or withdraw money
+int c = sc.nextInt(); // Accepting value from User
+switch(c) // Switch case declared with variable c as expression
 {
-case 1://If c is 1, then these set of statements are executed
-System.out.println("Enter money to deposit");//Asking user for money to be
-                                             //deposited
-int a = sc.nextInt();//Accepting value from user
-Bank c1 = new Bank(dn,toa,an,ba);//Values are passed to
-                                              //Constructor
-c1.deposit(a);//deposit function is invoked with value of a getting passed
-             //to it
-c1.display();//display function is invoked
-break;//break statement terminates statements in case
-case 2://If c is 2, then these set of statements are executed
-System.out.println("Enter money to withdraw");//Asking user for money to be
-                                             //withdrawn
-int b = sc.nextInt();//Accepting value from user
-Bank c2 = new Bank(dn,toa,an,ba);//Values are passed to
-                                              //Constructor
-c2.withdraw(b);//withdraw function is invoked with value of b getting
-             //passed to it
-if(ba < b)//if balance amount is smaller than amount withdrawn
+case 1: // If c is 1, then these set of statements are executed
+System.out.println("Enter money to deposit"); // Asking user for money to be deposited
+int a = sc.nextInt(); // Accepting value from user
+Bank c1 = new Bank(dn,toa,an,ba); // Values are passed to Constructor
+c1.deposit(a); // deposit function is invoked with value of a getting passed to it
+c1.display(); // display function is invoked
+break; // break statement terminates statements in case
+case 2: // If c is 2, then these set of statements are executed
+System.out.println("Enter money to withdraw");//Asking user for money to be withdrawn
+int b = sc.nextInt(); // Accepting value from user
+Bank c2 = new Bank(dn,toa,an,ba); // Values are passed to Constructor
+c2.withdraw(b); // Withdraw function is invoked with value of b getting passed to it
+if(ba < b) // if balance amount is smaller than amount withdrawn
 {
-    break;//case is broken(no details are showed)
+    break; // case is broken(no details are showed)
 }
-c2.display();//display function is invoked
-break;//break statement terminates statements in case
+c2.display(); // display function is invoked
+break; // break statement terminates statements in case
 }
 }
 }
