@@ -13,7 +13,7 @@ Bank(String dn, String toa, int an, int ba) // Constructor declared
 }
 public void deposit(int amount) // function deposit declared
 {
-balanceAmount = balanceAmount + amount;//here amount is added to balance
+balanceAmount = balanceAmount + amount; // here amount is added to balance
 }
 public void withdraw(int amount)//function withdraw declared
 {
