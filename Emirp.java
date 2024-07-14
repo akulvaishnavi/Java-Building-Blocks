@@ -21,22 +21,22 @@ return 0; // 0 is returned
 else // otherwise
 return isPrime(x+1); // function is called again w value of x increased by 1
 }
-public static void main(String args[])//Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter Number");// Asking user for number to be checked
-int y = sc.nextInt();//Accepting value from User
-Emirp em = new Emirp(y);//Declaring object to use Emirp class 
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter Number"); // Asking user for number to be checked
+int y = sc.nextInt(); // Accepting value from User
+Emirp em = new Emirp(y); // Declaring object to use Emirp class 
 int rev = 0; int f = 2;
-for(int i = y; i > 0; i = i / 10)//for loop to reverse given number
+for(int i = y; i > 0; i = i / 10) // for loop to reverse given number
 {
 int d = i % 10;
 rev = (rev * 10) + d;
 }
-int a = em.isPrime(f);//a stores value if given number is prime or not
+int a = em.isPrime(f); // a stores value if given number is prime or not
 Emirp em1 = new Emirp(rev); 
-int b = em1.isPrime(f);//b stores value if reversed number is prime or not
-if (a == 1 && b == 1)//if both are prime(== 1)
+int b = em1.isPrime(f); // b stores value if reversed number is prime or not
+if (a == 1 && b == 1) // if both are prime(== 1)
 {
 System.out.println("Number is Emirp");
 }
