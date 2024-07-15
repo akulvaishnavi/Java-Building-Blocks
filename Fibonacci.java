@@ -46,8 +46,3 @@ count++;//The counter increases after the printing of the new number
 *  5                z                     int        Used to store the 
 *                                                    sum of x and y
 */
-
-        
-       
-    
-
