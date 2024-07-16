@@ -9,8 +9,7 @@ public void sumSeries(int n, double x)//function sumSeries declared with 1 int a
 {
 int j = 1;
 double sum = 0.0;
-for(int i = 1; i <=n; i++)//for loop declared for until sum of 
-//series will work
+for(int i = 1; i <=n; i++)//for loop declared for until sum of series will work
 {
 if (j % 2 == 0)//if j is divisible by 2
 {
