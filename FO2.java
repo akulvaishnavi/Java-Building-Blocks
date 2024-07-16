@@ -34,24 +34,22 @@ for (int k = l; l <=i; l++) // for loop declared for finding factorial of no.
 {
 f = f * k; // factorial of number is calculated here (by multiplying the no and no.s before it)
 }
-sum = sum + (double) 1/f;//x divided by factorial of no. is added to sum
+sum = sum + (double) 1/f; // x divided by factorial of no. is added to sum
 }
-System.out.println("The sum is" + sum);//sum is printed
+System.out.println("The sum is" + sum); // sum is printed
 }
-public static void main(String args[])//Main method declared
+public static void main(String args[]) // Main method declared
 {
-FO2 fo = new FO2();// Declaring object to use FO2 class
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter n");//Asking user for value of n
-int n = sc.nextInt();//Accepting value from User
-System.out.println("Enter x");//Asking user for value of x
-double x = sc.nextDouble();//Accepting value from User
-System.out.println("Enter n1");//Asking user for value of n1
-int n1 = sc.nextInt();//Accepting value from User
-fo.sumSeries(n,x);//function sumSeries with 2 arguments is called with
-//values of n and x being passed to it
-fo.sumSeries(n1);//function sumSeries with 1 argument is called with 
-//value of n1 being passed to it
+FO2 fo = new FO2(); // Declaring object to use FO2 class
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter n"); // Asking user for value of n
+int n = sc.nextInt(); // Accepting value from User
+System.out.println("Enter x"); // Asking user for value of x
+double x = sc.nextDouble(); // Accepting value from User
+System.out.println("Enter n1"); // Asking user for value of n1
+int n1 = sc.nextInt(); // Accepting value from User
+fo.sumSeries(n,x); // function sumSeries with 2 arguments is called with values of n and x being passed to it
+fo.sumSeries(n1);//function sumSeries with 1 argument is called with value of n1 being passed to it
 }
 }
 /* Variable Description table
