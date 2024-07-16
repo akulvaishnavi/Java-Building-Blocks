@@ -21,15 +21,14 @@ sum = sum + (double) x/j; // x divided by j would be added to sum
 }
 j++; // j is incremented by one
 }
-System.out.println("The sum is " + sum);//sum is printed
+System.out.println("The sum is " + sum); // sum is printed
 }
-public void sumSeries(int n)//function sumSeries declared with 1 int argument
+public void sumSeries(int n) // function sumSeries declared with 1 int argument
 {
 int l = 1;
 double sum = 0.0;
 int f = 1;
-for(int i = 1; i<=n; i++)//for loop declared for until sum of series will 
-//work
+for(int i = 1; i<=n; i++) // for loop declared for until sum of series will work
 {
 for (int k = l; l <=i; l++)//for loop declared for finding factorial of no.
 {
