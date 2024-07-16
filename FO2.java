@@ -1,12 +1,11 @@
 /* Program to execute the following sum of series
 * 1. sum = 1-x/1+x/2...... upto n terms
-* 2. sum = 1/1!+1/2!.....upto n terms
-*/
-import java.util.Scanner;//Scanner class imported from java.util package
+* 2. sum = 1/1!+1/2!.....upto n terms */
+
+import java.util.Scanner; // Scanner class imported from java.util package
 public class FO2
 {
-public void sumSeries(int n, double x)//function sumSeries declared with 
-//1 int and 1 double argument
+public void sumSeries(int n, double x)//function sumSeries declared with 1 int and 1 double argument
 {
 int j = 1;
 double sum = 0.0;
