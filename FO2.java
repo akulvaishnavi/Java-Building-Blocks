@@ -5,23 +5,21 @@
 import java.util.Scanner; // Scanner class imported from java.util package
 public class FO2
 {
-public void sumSeries(int n, double x)//function sumSeries declared with 1 int and 1 double argument
+public void sumSeries(int n, double x) // function sumSeries declared with 1 int and 1 double argument
 {
 int j = 1;
 double sum = 0.0;
-for(int i = 1; i <=n; i++)//for loop declared for until sum of series will work
+for(int i = 1; i <=n; i++) // for loop declared for until sum of series will work
 {
-if (j % 2 == 0)//if j is divisible by 2
+if (j % 2 == 0) // if j is divisible by 2
 {
-sum = sum - (double) x/j;//x divided by j would be 
-//substracted from sum
+sum = sum - (double) x/j; // x divided by j would be substracted from sum
 }
-else//otherwise
+else // otherwise
 {
-sum = sum + (double) x/j;//x divided by j would be added to
-//sum
+sum = sum + (double) x/j; // x divided by j would be added to sum
 }
-j++;//j is incremented by one
+j++; // j is incremented by one
 }
 System.out.println("The sum is " + sum);//sum is printed
 }
