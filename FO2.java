@@ -30,10 +30,9 @@ double sum = 0.0;
 int f = 1;
 for(int i = 1; i<=n; i++) // for loop declared for until sum of series will work
 {
-for (int k = l; l <=i; l++)//for loop declared for finding factorial of no.
+for (int k = l; l <=i; l++) // for loop declared for finding factorial of no.
 {
-f = f * k;//factorial of number is calculated here
-//(by multipling the no and no.s before it)
+f = f * k;//factorial of number is calculated here (by multipling the no and no.s before it)
 }
 sum = sum + (double) 1/f;//x divided by factorial of no. is added 
 //to sum
