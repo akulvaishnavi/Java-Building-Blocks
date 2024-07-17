@@ -13,20 +13,19 @@ String e = sc.nextLine(); // Accepting value from user
 int flag = 0;
 for(int i = 0; i <= 6;i++) // for loop declared fro checking if element is present in array
 {
-if(e.equalsIgnoreCase(wotw[i]))//if the element is present
+if(e.equalsIgnoreCase(wotw[i])) // if the element is present
 {
-flag++;//flag is incremented
-break;//break statement stops furthur execution of loop
+flag++; // flag is incremented
+break; // break statement stops further execution of loop
 }
 }
-if(flag ==1)//if flag is 1
+if(flag ==1) // if flag is 1
 {
-System.out.println("Element Found");//user is told that element is found
+System.out.println("Element Found"); // user is told that element is found
 }
-else//otherwise
+else // otherwise
 {
-System.out.println("Element not found");//user is told that element 
-                                       //isn't found
+System.out.println("Element not found");//user is told that element is not found
 }
 }
 }
