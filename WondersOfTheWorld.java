@@ -8,11 +8,10 @@ public static void main(String args[]) // Main method declared
 {
 Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
 String wotw[] = {"Taj Mahal","Great Wall of China","Petra","Machu Picchu","Chichen Itza","Colosseum","Christ the Redeemer"}; // array wotw declared 
-System.out.println("Enter element to find");//Asking user for element
-String e = sc.nextLine();//Accepting value from user
+System.out.println("Enter element to find"); // Asking user for element
+String e = sc.nextLine(); // Accepting value from user
 int flag = 0;
-for(int i = 0; i <= 6;i++)//for loop declared fro checking if element
-//is present in array
+for(int i = 0; i <= 6;i++) // for loop declared fro checking if element is present in array
 {
 if(e.equalsIgnoreCase(wotw[i]))//if the element is present
 {
