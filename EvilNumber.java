@@ -32,7 +32,7 @@ if(c % 2 == 0) // if counter is divisible by 2
 {
 System.out.println("The number is evil and binary is " + sb);//no. is evil and its binary is shown
 }
-else//otherwise
+else // otherwise
 {
 System.out.println("The number is not evil and binary is " + sb);
 //number is not evil and its binary is shown
