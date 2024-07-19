@@ -3,25 +3,24 @@
 * E.g:- binary form of 15 is 1111. It has 4 '1''s
 * Thus 15 is a evil number */
 
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 public class EvilNumber
 {
-public static void main(String args[])// Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter number");// Asking user for number to be checked
-int n = sc.nextInt();//Accepting value from User
-String r = ""; int c = 0;//counter variable declared
-for(int i = n; i > 0; i = i / 2)//for loop for finding binary of number
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter number"); // Asking user for number to be checked
+int n = sc.nextInt(); // Accepting value from User
+String r = ""; int c = 0; // counter variable declared
+for(int i = n; i > 0; i = i / 2) // for loop for finding binary of number
 {
 int y = i % 2;
 String s = String.valueOf(y);
-r = r + s;//binary of number is formed
+r = r + s; // binary of number is formed
 }
 StringBuffer sb = new StringBuffer(r);
-sb = sb.reverse();//actual binary is formed
-for(int i = 0; i < r.length(); i++)//for loop to find no. of 1's in binary
-                                  //of number
+sb = sb.reverse(); // actual binary is formed
+for(int i = 0; i < r.length(); i++) // for loop to find no. of 1's in binary of number
 {
 char ch = r.charAt(i);
 if(ch == '1')//if char is 1
