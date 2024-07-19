@@ -23,15 +23,14 @@ sb = sb.reverse(); // actual binary is formed
 for(int i = 0; i < r.length(); i++) // for loop to find no. of 1's in binary of number
 {
 char ch = r.charAt(i);
-if(ch == '1')//if char is 1
+if(ch == '1') // if char is 1
 {
-c++;//counter is incremented
+c++; // counter is incremented
 }
 }
-if(c % 2 == 0)//if counter is divisible by 2
+if(c % 2 == 0) // if counter is divisible by 2
 {
-System.out.println("The number is evil and binary is " + sb);//no. is evil
-//and its binary is shown
+System.out.println("The number is evil and binary is " + sb);//no. is evil and its binary is shown
 }
 else//otherwise
 {
