@@ -51,9 +51,10 @@ for(; n > 0; n = n / 16)
 int r=n%16; // finding remainder by dividing the number by 16
 s2=dig1[r]+s2; // adding the remainder to the result
 }
-System.out.println("The Hexadecimal Form is "+s2);//correct hexadecimal form is printed
+System.out.println("The Hexadecimal Form is "+s2); // correct hexadecimal form is printed
 break; // break statement terminates statements in case
-default: // if k is anything other than one or two 
+    
+default: // if k is anything other than 1, 2 or 3
 System.out.println("Invalid"); // error statement given
 }
 }
