@@ -20,15 +20,14 @@ switch(k) // switch case declared with variable k as its expression
 {
 case 1: // If k is 1, then these set of statements are executed
 String s = "";
-for(int i = n; i > 0; i = i / 2)//for loop to find remainders by division method and concatenate them
+for(int i = n; i > 0; i = i / 2) // for loop to find remainders by division method and concatenate them
 {
-int r = i % 2;//remainder is stored in r
-s = s + String.valueOf(r);//value of r is concated to s
+int r = i % 2; // remainder is stored in r
+s = s + String.valueOf(r); // value of r is concated to s
 }
 StringBuffer sb = new StringBuffer(s);
-sb = sb.reverse();//sb is reversed
-System.out.println("The Binary Form is " + sb);//correct binary form
-                                               //is printec
+sb = sb.reverse(); // sb is reversed
+System.out.println("The Binary Form is " + sb);//correct binary form is printed
 break;//break statement terminates statements in case
 case 2://If k is 2, these statements are executed
 String s1=""; //variable for storing the result
