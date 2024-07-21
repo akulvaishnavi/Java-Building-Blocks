@@ -39,24 +39,22 @@ int r=n%8; // finding remainder by dividing the number by 8
 s1=dig[r]+s1; // adding the remainder to the result and reversing at the same time
 n=n/8;
 }
-System.out.println("The Octal Form is " + s1);//correct octal form is
-                                              //printed
-break;//break statement terminates statements in case
-case 3://If k is 3, these statements are executed
-String s2=""; //variable for storing the result
+System.out.println("The Octal Form is " + s1); // correct octal form is printed
+break; // break statement terminates statements in case
+case 3: // If k is 3, these statements are executed
+String s2=""; // variable for storing the result
 char dig1[]={'0','1','2','3','4','5','6','7','8','9',
 'A','B','C','D','E','F'};
-//array storing the digits (as characters) in a hexadecimal number system
+// array storing the digits (as characters) in a hexadecimal number system
 for(; n > 0; n = n / 16)
 {
-int r=n%16; //finding remainder by dividing the number by 16
-s2=dig1[r]+s2; //adding the remainder to the result
+int r=n%16; // finding remainder by dividing the number by 16
+s2=dig1[r]+s2; // adding the remainder to the result
 }
-System.out.println("The Hexadecimal Form is "+s2);//correct hexadecimal 
-                                                 //form is printed
-break;//break statement terminates statements in case
-default://if k is anything other than one or two 
-System.out.println("Invalid");//error statement given
+System.out.println("The Hexadecimal Form is "+s2);//correct hexadecimal form is printed
+break; // break statement terminates statements in case
+default: // if k is anything other than one or two 
+System.out.println("Invalid"); // error statement given
 }
 }
 }
