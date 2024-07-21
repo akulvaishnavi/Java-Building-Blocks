@@ -7,21 +7,20 @@ public class DtoBOH
 {
 public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter decimal number");//Asking user for decimal no.
-int n = sc.nextInt();//Accepting value from User
-System.out.println("Menu");//Menu is shown to user
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter decimal number"); // Asking user for decimal no.
+int n = sc.nextInt(); // Accepting value from User
+System.out.println("Menu"); // Menu is shown to user
 System.out.println("Press 1 for Binary Conversion");
 System.out.println("Press 2 for Octal Conversion");
 System.out.println("Press 3 for Hexadecimal Conversion");
-System.out.println("Enter choice");//Asking user for choice of execution
-int k = sc.nextInt();//Accepting value from User
-switch(k)//switch case declared with variable k as its expression
+System.out.println("Enter choice"); // Asking user for choice of execution
+int k = sc.nextInt(); // Accepting value from User
+switch(k) // switch case declared with variable k as its expression
 {
-case 1://If k is 1, then these set of statements are executed
+case 1: // If k is 1, then these set of statements are executed
 String s = "";
-for(int i = n; i > 0; i = i / 2)//for loop to find remainders by
-                                //division method and concate them
+for(int i = n; i > 0; i = i / 2)//for loop to find remainders by division method and concatenate them
 {
 int r = i % 2;//remainder is stored in r
 s = s + String.valueOf(r);//value of r is concated to s
