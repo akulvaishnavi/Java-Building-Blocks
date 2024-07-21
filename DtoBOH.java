@@ -27,17 +27,16 @@ s = s + String.valueOf(r); // value of r is concated to s
 }
 StringBuffer sb = new StringBuffer(s);
 sb = sb.reverse(); // sb is reversed
-System.out.println("The Binary Form is " + sb);//correct binary form is printed
-break;//break statement terminates statements in case
-case 2://If k is 2, these statements are executed
-String s1=""; //variable for storing the result
-char dig[]={'0','1','2','3','4','5','6','7'};//array storing the digits 
-//(as characters) in the octal number system
+System.out.println("The Binary Form is " + sb); // correct binary form is printed
+break; // break statement terminates statements in case
+case 2: // If k is 2, these statements are executed
+String s1=""; // variable for storing the result
+char dig[]={'0','1','2','3','4','5','6','7'}; // array storing the digits (as characters) in the octal number system
 
 while(n>0)
 {
-int r=n%8; //finding remainder by dividing the number by 8
-s1=dig[r]+s1; //adding the remainder to the result and 
+int r=n%8; // finding remainder by dividing the number by 8
+s1=dig[r]+s1; // adding the remainder to the result and 
 //reversing at the same time
 n=n/8;
 }
