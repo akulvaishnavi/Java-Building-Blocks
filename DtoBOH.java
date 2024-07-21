@@ -66,8 +66,8 @@ System.out.println("Invalid"); // error statement given
 *  2                 k                   int       Used to store the option
 *                                                  the user has selected
 *  3                 s                  String     Used to store remainder
-*                                                  which are concated after
-*                                                  division method
+*                                                  which are concatenated 
+*                                                  after division method
 *  4                 sb              StringBuffer  Used to store correct 
 *                                                  form of binary no. after
 *                                                  reversing
