@@ -36,8 +36,7 @@ char dig[]={'0','1','2','3','4','5','6','7'}; // array storing the digits (as ch
 while(n>0)
 {
 int r=n%8; // finding remainder by dividing the number by 8
-s1=dig[r]+s1; // adding the remainder to the result and 
-//reversing at the same time
+s1=dig[r]+s1; // adding the remainder to the result and reversing at the same time
 n=n/8;
 }
 System.out.println("The Octal Form is " + s1);//correct octal form is
