@@ -4,8 +4,10 @@ public class ArrayRotationCW
     public static void main(String args[])
     {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter No. of rows/columns (Square matrix upto 20)");
+        int m = sc.nextInt();
         System.out.println("Enter Elements");
-        int a[][]= new int[3][3]; int m = 3;
+        int a[][]= new int[m][m];
         for(int i = 0; i < m; i++)
         {
             for(int j = 0; j < m; j++)
