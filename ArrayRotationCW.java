@@ -6,9 +6,9 @@ public class ArrayRotationCW
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Elements");
         int a[][]= new int[3][3]; int m = 3;
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < m; i++)
         {
-            for(int j = 0; j < 3; j++)
+            for(int j = 0; j < m; j++)
             {
                 a[i][j] = sc.nextInt();
             }
@@ -24,9 +24,9 @@ public class ArrayRotationCW
                 a[j][m-1-i]= temp; 
             }
         }
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < m; i++)
         {
-            for(int j = 0; j < 3; j++)
+            for(int j = 0; j < m; j++)
             {
                 System.out.print(a[i][j] + " ");
             }
