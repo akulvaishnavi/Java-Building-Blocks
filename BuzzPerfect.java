@@ -5,24 +5,23 @@
 * is equal to the number E.g:- 6's factors are 1,2 and 3 excluding itself
 * sum is 6. Hence. it is a Perfect number */
 
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 public class BuzzPerfect
 {
-public static void main (String args [])// Main method declared
+public static void main (String args []) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Menu");//Menu is shown to user
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Menu"); // Menu is shown to user
 System.out.println("1. Buzz number");
 System.out.println("2. Perfect Number");
-System.out.println("Enter number");// Asking user for number to be checked
-int n = sc.nextInt();//Accepting value from User
-System.out.println("Enter choice");// Asking user for choice of execution
-int c = sc.nextInt();//Accepting value from User
-switch (c)//switch case declared with variable c as its expression
+System.out.println("Enter number"); // Asking user for number to be checked
+int n = sc.nextInt(); // Accepting value from User
+System.out.println("Enter choice"); // Asking user for choice of execution
+int c = sc.nextInt(); // Accepting value from User
+switch (c) // switch case declared with variable c as its expression
 {
 case 1://If c is 1, then these set of statements are executed
-if (n % 7 == 0 || n % 10 == 7)//If the number obeys either of the two 
-                             //criteria
+if (n % 7 == 0 || n % 10 == 7)//If the number obeys either of the two criteria
 {
     System.out.println("Buzz");//This statement is executed
 }
