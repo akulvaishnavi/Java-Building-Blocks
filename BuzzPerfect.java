@@ -20,37 +20,36 @@ System.out.println("Enter choice"); // Asking user for choice of execution
 int c = sc.nextInt(); // Accepting value from User
 switch (c) // switch case declared with variable c as its expression
 {
-case 1://If c is 1, then these set of statements are executed
-if (n % 7 == 0 || n % 10 == 7)//If the number obeys either of the two criteria
+case 1: // If c is 1, then these set of statements are executed
+if (n % 7 == 0 || n % 10 == 7) // If the number obeys either of the two criteria
 {
-    System.out.println("Buzz");//This statement is executed
+    System.out.println("Buzz"); // This statement is executed
 }
-else//Otherwise
+else // Otherwise
 {
-    System.out.println("Not Buzz");//This Statement is executed
+    System.out.println("Not Buzz"); // This Statement is executed
 }
-break;//break statement terminates statements in case
-case 2: //If c is 2, these statements are executed
+break; // break statement terminates statements in case
+case 2: // If c is 2, these statements are executed
 int sum = 0;
-for (int i = 1 ; i < n; i++)//for loop declared to find out factors of
-//number and their sum
+for (int i = 1 ; i < n; i++) // for loop declared to find out factors of number and their sum
 {
-   if (n % i == 0)//if this expression is true
+   if (n % i == 0) // if this expression is true
    {
-       sum = sum + i;//i is added to the value present in sum
-    }//otherwise nothing is executed
+       sum = sum + i; // i is added to the value present in sum
+    } // otherwise nothing is executed
 }
-if (sum == n)//If this expression is true
+if (sum == n) // If this expression is true
 {
-    System.out.println("Perfect Number");//this statement is executed
+    System.out.println("Perfect Number"); // this statement is executed
 }
-else//Otherwise
+else // Otherwise
 {
-    System.out.println("Not a perfect number");//this statement is executed
+    System.out.println("Not a perfect number"); // this statement is executed
 }
-break;//break statement terminates statements in case
-default://if c is anything other than one or two
-System.out.println("Invalid");//This statement(s) is executed
+break; // break statement terminates statements in case
+default: // if c is anything other than one or two
+System.out.println("Invalid"); // This statement(s) is executed
 }
 }
 }
