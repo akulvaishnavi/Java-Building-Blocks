@@ -61,7 +61,7 @@ car.print(n); // function div is called with value of n passing to it
  *                                                    variable a & used to
  *                                                    show number of boxes
  *                                                    left
- *  6                 a                     int       Used to accept and 
+ *  6                 a/n                   int       Used to accept and 
  *                                                    store the number 
  *                                                    of boxes to be 
  *                                                    covered */
