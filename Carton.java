@@ -40,10 +40,10 @@ public static void main(String args[]) // Main method declared
 {
 Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
 System.out.println("Enter no. of boxes"); // Asking user for no. of boxes
-int a = sc.nextInt(); // Getting value from user
-Carton b = new Carton(); // Declaring object to use Carton class
-b.div(a); // function div is called with value of n passing to it
-b.print(a); // function div is called with value of n passing to it
+int n = sc.nextInt(); // Getting value from user
+Carton car = new Carton(); // Declaring object to use Carton class
+car.div(n); // function div is called with value of n passing to it
+car.print(n); // function div is called with value of n passing to it
 }
 }
 /* Variable Description table
