@@ -5,43 +5,40 @@
  * No. of 12 box cartons = 0
  * No. of 6 box cartons = 1
  * Remaining boxes = 0
- * Total number of boxes = 16
- */
-import java.util.Scanner;//Scanner class imported from java.util package
+ * Total number of boxes = 16 */
+
+import java.util.Scanner; // Scanner class imported from java.util package
 public class Carton
 {
-int s,t,tf,f,r;//Instance Variables Declared
-void div(int a)//Function div declared
+int s,t,tf,f,r; // Instance Variables Declared
+void div(int a) // Function div declared
 {
-r = a;//variable a gets the value of number of boxes
-f = r/48;//dividing by 48 shows how many 48 box cartons are required
-r = r%48;//remainder gives us the boxes left to be covered
-tf = r/24;//dividing by 24 shows how many 24 box cartons are required
-r = r%24;//remainder gives us the boxes left to be covered
-t = r/12;//dividing by 12 shows how many 12 box cartons are required
-r = r%12;//remainder gives us the boxes left to be covered
-s = r/6;//dividing by 6 shows how many 6 box cartons are required
-r = r%6;//remainder gives us the boxes left to be covered(by 1 carton)
+r = a; // variable a gets the value of number of boxes
+f = r/48; // dividing by 48 shows how many 48 box cartons are required
+r = r%48; // remainder gives us the boxes left to be covered
+tf = r/24; // dividing by 24 shows how many 24 box cartons are required
+r = r%24; // remainder gives us the boxes left to be covered
+t = r/12; // dividing by 12 shows how many 12 box cartons are required
+r = r%12; // remainder gives us the boxes left to be covered
+s = r/6; // dividing by 6 shows how many 6 box cartons are required
+r = r%6; // remainder gives us the boxes left to be covered(by 1 carton)
 }
-void print(int a)//Function display declared
+void print(int a) // Function display declared
 {
-System.out.println("No of cartons = " + a);//no. of cartons
-System.out.println("No. of 6 box cartons used = " + s);//no. of all
-System.out.println("No. of 12 box cartons used = " + t);//types of 
-System.out.println("No. of 24 box cartons used = " + tf);//cartons are
-System.out.println("No. of 48 box cartons used = " + f);//shown to user
-System.out.println("Remaining boxes = " + r);//remaining boxes are shown
-if(r == 0)//if remaining boxes are 0
-System.out.println("Total number of cartons used = " + (s+t+tf+f));
-//carton no. is not increased
-else//otherwise
-System.out.println("Total number of cartons used = " + (s+t+tf+f+1));
-//carton no. is increased
+System.out.println("No of cartons = " + a); // no. of cartons
+System.out.println("No. of 6 box cartons used = " + s); // no. of all
+System.out.println("No. of 12 box cartons used = " + t); // types of 
+System.out.println("No. of 24 box cartons used = " + tf); // cartons are
+System.out.println("No. of 48 box cartons used = " + f); // shown to user
+System.out.println("Remaining boxes = " + r); // remaining boxes are shown
+if(r == 0) // if remaining boxes are 0
+System.out.println("Total number of cartons used = " + (s+t+tf+f)); // carton no. is not increased
+else // otherwise
+System.out.println("Total number of cartons used = " + (s+t+tf+f+1)); // carton no. is increased
 }
-public static void main(String args[])//Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner 
-                                    //class
+Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
 System.out.println("Enter no. of boxes");//Asking user for no. of boxes
 int a = sc.nextInt();//Getting value from user
 Carton b = new Carton();//Declaring object to use Carton class
