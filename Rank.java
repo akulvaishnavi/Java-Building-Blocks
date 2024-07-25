@@ -37,33 +37,33 @@ public class Rank extends Record // class Rank declared which inherits propertie
 {
 int index;
 String stu;
-Rank()//Constructor to give value to instance variables
+Rank() // Constructor to give value to instance variables
 {
 index = 0;
 stu = "";
 }
-void highest()//function to find highest rank
+void highest() // function to find highest rank
 {
 int min = rnk[0];
 stu = name[0];
 for(int i = 0; i < 5; i++)
 {
-if(rnk [i] < min)//if rank is less than min
+if(rnk [i] < min) // if rank is less than min
 {
-min = rnk[i];//it becomes new "highest" rank
+min = rnk[i]; // it becomes new "highest" rank
 stu = name[i];
 }
 }
 index = min;
 }
-void display()//function to display values to user
+void display() // function to display values to user
 {
-super.display();//display function of super class is displayed 
+super.display(); // display function of super class is displayed 
 System.out.println("Topmost rank is " + index + " and the student is " + stu); 
 }
 public static void main(String args[])
 {
-Rank ob = new Rank();//Declaring object to use Rank class
+Rank ob = new Rank(); // Declaring object to use Rank class
 ob.readvalues();
 ob.highest();
 ob.display();
