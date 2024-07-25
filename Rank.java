@@ -37,8 +37,7 @@ public class Rank extends Record // class Rank declared which inherits propertie
 {
 int index;
 String stu;
-Rank()//Constructor to give value 
-//to instance variables
+Rank()//Constructor to give value to instance variables
 {
 index = 0;
 stu = "";
