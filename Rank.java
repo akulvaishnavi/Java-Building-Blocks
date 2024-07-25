@@ -25,7 +25,7 @@ for(int i = 0; i < 5; i++)
 rnk[i] = sc.nextInt(); // Value is entered by user
 }
 }
-void display()//function to show values to the user
+void display() // function to show values to the user
 {
 for(int i = 0; i < 5; i++)
 {
@@ -33,8 +33,7 @@ System.out.println(name[i] + " " + rnk[i]);
 }
 }
 }
-public class Rank extends Record//class Rank declared which inherits
-//properties from Record class
+public class Rank extends Record // class Rank declared which inherits properties from Record class
 {
 int index;
 String stu;
