@@ -22,7 +22,7 @@ name[i] = sc.next(); // Value is entered by user
 System.out.println("Enter rank of student"); // Asking user for ranks of students
 for(int i = 0; i < 5; i++)
 {
-rnk[i] = sc.nextInt();//Value is entered by user
+rnk[i] = sc.nextInt(); // Value is entered by user
 }
 }
 void display()//function to show values to the user
