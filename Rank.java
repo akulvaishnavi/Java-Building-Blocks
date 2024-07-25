@@ -1,27 +1,25 @@
 /* Program to find highest rank out of the given students using 
  * inheritance and printing all the records of the students as well */
-import java.util.Scanner;//Scanner class imported from java.util package
+
+import java.util.Scanner; // Scanner class imported from java.util package
 class Record
 {
 String name[];
 int rnk[];
-Record()//Constructor to give value 
-//to instance variables
+Record() // Constructor to give value to instance variables
 {
 name = new String[5];
 rnk = new int[5];
 }
-void readvalues()//Function to enter all records of students 
+void readvalues() // Function to enter all records of students 
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter names of students");//Asking user for names of
-                                              //students
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter names of students"); // Asking user for names of students
 for(int i = 0; i < 5; i++)
 {
-name[i] = sc.next();//Value is entered by user
+name[i] = sc.next(); // Value is entered by user
 }
-System.out.println("Enter rank of student");//Asking user for ranks of 
-                                            //students
+System.out.println("Enter rank of student"); // Asking user for ranks of students
 for(int i = 0; i < 5; i++)
 {
 rnk[i] = sc.nextInt();//Value is entered by user
