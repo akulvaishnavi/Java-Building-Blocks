@@ -3,7 +3,7 @@ public class Largest
 {
     public static void main(String args[])
     {
-         Scanner sc = new  Scanner(System.in);
+        Scanner sc = new  Scanner(System.in);
         System.out.println("Enter Word");
         String s = sc.nextLine();
         s = s + " ";
