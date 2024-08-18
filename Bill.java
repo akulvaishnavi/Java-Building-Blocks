@@ -1,13 +1,12 @@
 /*Program to find total rental charge of phone using inheritance*/
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 class Detail
 {
 String name;
 String address;
 long telno;
 double rent;
-Detail(String a, String b, long c, double d)//Constructor to give value 
-//to instance variables
+Detail(String a, String b, long c, double d) // Constructor to give value to instance variables
 {
 name = a;
 address = b;
