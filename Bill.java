@@ -13,7 +13,7 @@ address = b;
 telno = c;
 rent = d;
 }
-public void show()//Function to display info to user
+public void show() // Function to display info to user
 {
 System.out.println("Name of customer - " + name);
 System.out.println("Address of Customer - " + address);
@@ -21,49 +21,46 @@ System.out.println("Phone no. of customer - " + telno);
 System.out.println("Total monthly rental charge is " + rent);
 }
 }
-public class Bill extends Detail//class Vill declared which inherits
-//properties from Detail class
+public class Bill extends Detail // class Bill declared which inherits properties from Detail class
 {
 int n;
 double amt;
-Bill(String a, String b, long c, double d, int e)//Constructor to give 
-//values to instance variables
+Bill(String a, String b, long c, double d, int e) // Constructor to give values to instance variables
 {
-super(a,b,c,d);//values are sent to constructor of super class for 
-//initialization of variables
+super(a,b,c,d); // values are sent to constructor of super class for initialization of variables
 n = e;
 amt = 0.0;
 }
-void cal()//function to calculate total rental charge
+void cal() // function to calculate total rental charge
 {
-if(n <= 100)//if calls less than 100
+if(n <= 100) // if calls less than 100
 {
 amt = rent;
 }
-else if(n > 100 && n <= 200)//calls less than 200, more than 100
+else if(n > 100 && n <= 200) // calls less than 200, more than 100
 {
 amt = rent + (0.6 * n);
 }
-else if(n > 200 && n <= 300)//calls less than 300, more than 200
+else if(n > 200 && n <= 300) // calls less than 300, more than 200
 {
 amt = rent + (0.8 * n);
 }
-else if(n > 300)//calls more than 300
+else if(n > 300) // calls more than 300
 {
 amt = rent + n;
 }
 }
-public void show()//Function to display values to user
+public void show() // Function to display values to user
 {
-super.show();//show function of super class is executed
+super.show(); // show function of super class is executed
 System.out.println("Total amt to be paid is " + amt);
 }
-public static void main(String args[])// Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc = new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter name");//Asking user for name,address,tel no.
-String nam = sc.next();//fixed charge,calls and user enters values in 
-System.out.println("Enter address");//variables
+Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter name"); // Asking user for name,address,tel no.
+String nam = sc.next(); // fixed charge,calls and user enters values in variables
+System.out.println("Enter address");
 String add = sc.nextLine();
 System.out.println("Enter telephone no.");
 long teln = sc.nextLong();
@@ -71,8 +68,7 @@ System.out.println("Enter fixed charge");
 double ren = sc.nextDouble();
 System.out.println("Enter no.of calls");
 int calls = sc.nextInt();
-Bill b = new Bill(nam,add,teln,ren,calls);//Declaring object to use Bill 
-//class
+Bill b = new Bill(nam,add,teln,ren,calls);//Declaring object to use Bill class
 b.cal();
 b.show();
 }
