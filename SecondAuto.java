@@ -1,3 +1,7 @@
+// Program to find Automorphic Number.
+// InputStreamReader used for input instead of Scanner class
+// Program done using do while loop
+
 import java.io.*;
 public class SecondAuto
 {
