@@ -7,80 +7,77 @@ public class Stack_Array
 int s[];
 int size;
 int top;
-Stack_Array(int capacity)//Constructor to give value 
-//to instance variables
+Stack_Array(int capacity) // Constructor to give value to instance variables
 {
-size=capacity;//size is now 5
-s=new int[size];
-top=-1;
+size = capacity; // size is now 5
+s = new int[size];
+top = -1;
 }   
-public void push(int element)//function to push element into array in 
-                            //the form of stack 
+public void push(int element) // function to push element into array in the form of stack 
 {
-if(top==size-1)//if top element is equal to last element of array
+if(top == size-1) // if top element is equal to last element of array
 {
-System.out.println("Overflows");//array will be overflows
+System.out.println("Overflows"); // array will be overflows
 }
-else//otherwise
+else // otherwise
 {
-top=top+1;//element added
-s[top]=element;//to the top
+top=top+1; // element added
+s[top]=element; // to the top
 }
-display();//array is displayed
+display(); // array is displayed
 }
-public void pop()//function to pop outermost element
+public void pop() // function to pop outermost element
 {
-if(top==-1)//if there is no element in array
+if(top==-1) // if there is no element in array
 {
-System.out.println("Underflows");//array will be underflows
+System.out.println("Underflows"); // array will be underflows
 }
-else//otherwise
+else // otherwise
 {
-int v=s[top];//topmost element
-System.out.println("Element popped "+v);//is poppped
+int v=s[top]; // topmost element
+System.out.println("Element popped "+v); // is poppped
 top=top-1;
 }
-display();//array is displayed
+display(); // array is displayed
 }
-public void display()//function to display array
+public void display() // function to display array
 {
-for(int i=top;i>=0;i--)
+for(int i = top; i >= 0; i--)
 {
 
-System.out.println(s[i]);//array is displayed
+System.out.println(s[i]); // array is displayed
 }
 }      
-public static void main(String args[])//Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc=new Scanner(System.in);//Declaring object to use Scanner class
-Stack_Array st=new Stack_Array(5);//Declaring object to use Stack_Array
-                                 //class
+Scanner sc=new Scanner(System.in); // Declaring object to use Scanner class
+Stack_Array st=new Stack_Array(5); // Declaring object to use Stack_Array class
 int choice=0;
-do{//do while loop for completion of process after posting menu
-System.out.println("1.Push");//menu
+do
+{ // do while loop for completion of process after posting menu
+System.out.println("1.Push"); // menu
 System.out.println("2.pop");
 System.out.println("3.exit");
-System.out.println("Enter ur choice");//Asking user for choice
-choice=sc.nextInt();//Value is entered by user
-switch(choice)//switch is declared with choice as equality variable
+System.out.println("Enter ur choice"); // Asking user for choice
+choice = sc.nextInt(); // Value is entered by user
+switch(choice) // switch is declared with choice as equality variable
 {
-case 1://1st case is for push
-System.out.println("Enter element");//Asking user for element
-int element=sc.nextInt();//Value is entered by user
-st.push(element);//push function is called
+case 1: // 1st case is for push
+System.out.println("Enter element"); // Asking user for element
+int element=sc.nextInt(); // Value is entered by user
+st.push(element); // push function is called
 break;
 case 2:
-st.pop();//pop function is called
+st.pop(); // pop function is called
 break;
 case 3:
-System.exit(0);//program is exited
+System.exit(0); // program is exited
 default:
-System.out.println("Invalid choice");//error message is shown
+System.out.println("Invalid choice"); // error message is shown
 }
-System.out.println("Do you want to continue");//user asked for
-                                             //continuation
-choice=sc.nextInt();//Value is entered by user
-}while(choice==1);//loop continues if choice is equal to 1
+System.out.println("Do you want to continue"); // user asked for continuation
+choice=sc.nextInt(); // Value is entered by user
+}while(choice==1); // loop continues if choice is equal to 1
 }
 }
 /* Variable Description table
