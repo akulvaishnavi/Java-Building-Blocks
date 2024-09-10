@@ -50,26 +50,25 @@ if(p[i][j]==key[j]) // if char of ans is same as that of key
 count++; // no. of correct answers increases by 1
 }
 }
-arr[i]=count;//correct answer is stored
-if(max<=count)//if max is less than count
-max=count;//it becomes the new maximum
+arr[i]=count; // correct answer is stored
+if(max<=count) // if max is less than count
+max=count; // it becomes the new maximum
 }
-for(int i=0;i<n;i++)//for loop to show participants and their scores
+for(int i=0;i<n;i++) // for loop to show participants and their scores
 {
 System.out.println("Participant"+(i+1)+" Scores"+arr[i]);
 }
-for(int i=0;i<n;i++)//for loop to show the maximum score
+for(int i=0;i<n;i++) // for loop to show the maximum score
 {
-if(arr[i]==max)//if max score is same as that of a student
+if(arr[i]==max) // if max score is same as that of a student
 {
-System.out.println("Participant"+(i+1));//student with max marks is
-                                        //shown
+System.out.println("Participant"+(i+1));//student with max marks is shown
 }
 }
 }
-else//if students are less than 3 or more than 11
+else // if students are less than 3 or more than 11
 {
-System.out.println("Invalid Out of Range");//error message is shown
+System.out.println("Invalid Out of Range"); // error message is shown
 System.exit(0);
 }
 }
