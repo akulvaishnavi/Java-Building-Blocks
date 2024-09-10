@@ -1,18 +1,18 @@
 /* Program to store quiz attempts of students and then finding the 
  * correct answers of each student */
-import java.util.Scanner;//Scanner class imported from java.util package
+
+import java.util.Scanner; // Scanner class imported from java.util package
 public class QuizDemo
 {
-public static void main(String args[])// Main method declared
+public static void main(String args[]) // Main method declared
 {
-Scanner sc=new Scanner(System.in);//Declaring object to use Scanner class
-System.out.println("Enter the number of participants");//Asking
-//user for number of participants
-int n=sc.nextInt();//Accepting value from user
-char p[][]=new char[n][5];//Array for students and their answers
+Scanner sc=new Scanner(System.in); // Declaring object to use Scanner class
+System.out.println("Enter the number of participants"); // Asking user for number of participants
+int n=sc.nextInt(); // Accepting value from user
+char p[][]=new char[n][5]; // Array for students and their answers
 char key[]=new char[5];
-int arr[]=new int[n];//Array for number of correct answers
-if(n>=3 && n<=11)//students are between 3 and 11
+int arr[]=new int[n]; // Array for number of correct answers
+if(n>=3 && n<=11) // students are between 3 and 11
 {
 for(int i=0;i<n;i++)//for loop to accept value from user
 {
