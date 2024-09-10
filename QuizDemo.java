@@ -14,40 +14,40 @@ char key[]=new char[5];
 int arr[]=new int[n]; // Array for number of correct answers
 if(n>=3 && n<=11) // students are between 3 and 11
 {
-for(int i=0;i<n;i++)//for loop to accept value from user
+for(int i=0;i<n;i++) // for loop to accept value from user
 {
 System.out.println("Enter ans for Participant  "+(i+1));
 for(int j=0;j<5;j++)
 {
-p[i][j]=sc.next().charAt(0);//Answers of students is entered
+p[i][j]=sc.next().charAt(0); // Answers of students is entered
 }
 }
 System.out.println("Enter ans key");
-for(int i=0;i<5;i++)//for loop to accept value from user
+for(int i=0;i<5;i++) // for loop to accept value from user
 {
-key[i]=sc.next().charAt(0);//Answer key is entered
+key[i]=sc.next().charAt(0); // Answer key is entered
 }
-for(int i=0;i<n;i++)//for loop to accept value from user
+for(int i=0;i<n;i++) // for loop to accept value from user
 {
 for(int j=0;j<5;j++)
 {
-System.out.print(p[i][j]+" ");//Answers are shown to user
+System.out.print(p[i][j]+" "); // Answers are shown to user
 }
 System.out.println();
 }
 for(int i=0;i<5;i++)
 {
-System.out.print(key[i]+" ");//key is is hown to user
+System.out.print(key[i]+" "); // key is is hown to user
 }
 int max=0,index=0;
-for(int i=0;i<n;i++)//for loop to find no. of correct answer
+for(int i=0;i<n;i++) // for loop to find no. of correct answer
 {
 int count=0;          
 for(int j=0;j<5;j++)
 {
-if(p[i][j]==key[j])//if char of ans is same as that of key
+if(p[i][j]==key[j]) // if char of ans is same as that of key
 {
-count++;//no. of correct answers increases by 1
+count++; // no. of correct answers increases by 1
 }
 }
 arr[i]=count;//correct answer is stored
