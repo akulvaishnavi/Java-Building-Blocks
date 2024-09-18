@@ -1,5 +1,6 @@
 /* Program to find the sum of border elements of an 2d array */
-import java.util.Scanner;//Scanner class imported from java.util package
+
+import java.util.Scanner; // Scanner class imported from java.util package
 public class SumOfBE
 {
 public static void main(String args[])// Main method declared
