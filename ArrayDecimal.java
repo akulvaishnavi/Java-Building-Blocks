@@ -14,8 +14,6 @@ this.n = n;
 }
 boolean check() // checks limit values for array size
 { 
-if(0 > m || m > 10)
-return false;
 if(2 > m || m > 6)
 return false;
 arr = new int[m][n];
@@ -33,17 +31,18 @@ arr[i][j] = sc.nextInt();
 }
 }
 }
-int octToDec(int[] x)//converts octal numbers in a 1d array to decimal
-{// where int[] x would be a row in our main array
+int octToDec(int[] x) // converts octal numbers in a 1d array to decimal where int[] x would be a row in our main array
+{
 int num = 0;
-for(int i = x.length-1; i>=0; i--)//for loop to convert to decimal
+for(int i = x.length-1; i>=0; i--) // for loop to convert to decimal
 {
 num = num  + (x[i] * (int)Math.pow(8, (x.length-1) - i));
 }
 return num;
 }
-void printer(){//prints the original array
-for(int i = 0; i<m; i++)//for loop to print original array
+void printer()
+  { // prints the original array
+for(int i = 0; i<m; i++) // for loop to print original array
 {
 for(int j = 0; j<n; j++)
 {
@@ -52,24 +51,27 @@ System.out.print(arr[i][j] + " ");
 System.out.println();
 }
 }
-void calc(){//calculates and prints the required decimal values
+void calc()
+  { // calculates and prints the required decimal values
 System.out.println("Decimal:");
-for(int i = 0; i<arr.length; i++)//for loop to print decimal values
+for(int i = 0; i<arr.length; i++) // for loop to print decimal values
 {
 System.out.println(octToDec(arr[i]));
 //here arr[i] is a row in the main array
 }
 }
-public static void main(String args[]){
-ArrayDecimal obj = new ArrayDecimal(3,3);//Declaring object to use 
-                                        //ArrayDecimal class
-if(obj.check()){ //executes only if array size is valid
+public static void main(String args[])
+  {
+ArrayDecimal obj = new ArrayDecimal(3,3); //Declaring object to use ArrayDecimal class
+if(obj.check())
+{ // executes only if array size is valid
 obj.inputArr();
 obj.printer();
 obj.calc();
 }
-else{
-System.out.println("Invalid Size Values");//error message is shown
+else
+{
+System.out.println("Invalid Size Values"); // error message is shown
 }
 }
 }
