@@ -12,20 +12,20 @@ ArrayDecimal(int m, int n) // Constructor to give value to instance variables
 this.m = m;
 this.n = n;
 }
-boolean check()//checks limit values for array size
+boolean check() // checks limit values for array size
 { 
 if(0 > m || m > 10)
 return false;
-if(2 > m || m>6)
+if(2 > m || m > 6)
 return false;
 arr = new int[m][n];
 return true;
 }
-void inputArr()//asks for input
+void inputArr() // asks for input
 { 
 System.out.println("enter elements");
 Scanner sc = new Scanner(System.in);
-for(int i = 0; i<m; i++)//for loop to ask user for elements
+for(int i = 0; i<m; i++) // for loop to ask user for elements
 {
 for(int j = 0; j<n; j++)
 {
