@@ -23,9 +23,9 @@ void inputArr() // asks for input
 { 
 System.out.println("enter elements");
 Scanner sc = new Scanner(System.in);
-for(int i = 0; i<m; i++) // for loop to ask user for elements
+for(int i = 0; i < m; i++) // for loop to ask user for elements
 {
-for(int j = 0; j<n; j++)
+for(int j = 0; j < n; j++)
 {
 arr[i][j] = sc.nextInt();
 }
