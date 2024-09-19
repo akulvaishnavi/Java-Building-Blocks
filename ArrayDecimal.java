@@ -34,7 +34,7 @@ arr[i][j] = sc.nextInt();
 int octToDec(int[] x) // converts octal numbers in a 1d array to decimal where int[] x would be a row in our main array
 {
 int num = 0;
-for(int i = x.length-1; i>=0; i--) // for loop to convert to decimal
+for(int i = x.length - 1; i >= 0; i--) // for loop to convert to decimal
 {
 num = num  + (x[i] * (int)Math.pow(8, (x.length-1) - i));
 }
@@ -56,8 +56,7 @@ void calc()
 System.out.println("Decimal:");
 for(int i = 0; i<arr.length; i++) // for loop to print decimal values
 {
-System.out.println(octToDec(arr[i]));
-//here arr[i] is a row in the main array
+System.out.println(octToDec(arr[i])); // here arr[i] is a row in the main array
 }
 }
 public static void main(String args[])
