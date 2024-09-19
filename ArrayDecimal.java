@@ -4,11 +4,10 @@
 import java.util.Scanner; // Scanner class imported from java.util package
 class ArrayDecimal
 {
-int m; //number of rows in array
-int n; //number of columns in array
+int m; // number of rows in array
+int n; // number of columns in array
 int[][] arr;
-ArrayDecimal(int m, int n)//Constructor to give value 
-//to instance variables
+ArrayDecimal(int m, int n) // Constructor to give value to instance variables
 {
 this.m = m;
 this.n = n;
