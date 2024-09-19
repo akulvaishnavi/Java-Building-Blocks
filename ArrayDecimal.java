@@ -1,7 +1,9 @@
 /* Program to enter octal values in a 2d array and then show their
 * decimal values in another 2d array */
-import java.util.Scanner;//Scanner class imported from java.util package
-class ArrayDecimal{
+
+import java.util.Scanner; // Scanner class imported from java.util package
+class ArrayDecimal
+{
 int m; //number of rows in array
 int n; //number of columns in array
 int[][] arr;
