@@ -9,19 +9,18 @@
 * polygon(int a) - prints pattern as follows(if a = 3) :-
 * 1 11 111 */
 
-import java.util.Scanner;//Scanner class imported from java.util package
+import java.util.Scanner; // Scanner class imported from java.util package
 public class PolyConstructor
 {
-void polygon(int n, char ch)//function polygon declared with 
-                           //1 int and 1 char argument
+void polygon(int n, char ch) // function polygon declared with 1 int and 1 char argument
 {
-for(int i = 1; i <=n; i++)//First for loop for number of columns and rows
+for(int i = 1; i <=n; i++) // First for loop for number of columns and rows
 {
-for (int j = 1; j <=i; j++)//Second for loop for printing pattern
+for (int j = 1; j <=i; j++) // Second for loop for printing pattern
 {
-System.out.print(ch);//characters of one line are printed
+System.out.print(ch); // characters of one line are printed
 }
-System.out.println();//line is broken here
+System.out.println(); // line is broken here
 }
 }
 void polygon(int x, int y)//function polygon declared with 
