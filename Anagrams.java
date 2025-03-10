@@ -4,7 +4,7 @@
 import java.util.Scanner; // Scanner class imported from java.util package
 class Anagrams
 {
-int c = 0;      
+int c = 0;
 void input()
 {
 Scanner sc = new Scanner(System.in); // Declaring object to use Scanner class
