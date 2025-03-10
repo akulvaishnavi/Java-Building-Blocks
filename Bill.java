@@ -68,7 +68,7 @@ System.out.println("Enter fixed charge");
 double ren = sc.nextDouble();
 System.out.println("Enter no.of calls");
 int calls = sc.nextInt();
-Bill b = new Bill(nam,add,teln,ren,calls);//Declaring object to use Bill class
+Bill b = new Bill(nam,add,teln,ren,calls); // Declaring object to use Bill class
 b.cal();
 b.show();
 }
